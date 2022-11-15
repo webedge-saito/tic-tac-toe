@@ -1,0 +1,94 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+
+  li.current button{
+    font-weight: bold;
+  }
+
+  .game-toggle {
+    display: flex;
+  }
+  .game-toggle input {
+    display: none;
+  }
+  .game-toggle label{
+    /*display: block;
+    float: left;*/
+    cursor: pointer;
+    width: auto;
+    margin: 0;
+    padding: 0.25rem;
+    background: #bdc3c7;
+    color: #869198;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1;
+    transition: .2s;
+  }
+  .game-toggle label:first-of-type{
+    border-radius: 3px 0 0 3px;
+  }
+  .game-toggle label:last-of-type{
+    border-radius: 0 3px 3px 0;
+  }
+  .game-toggle input[type="radio"]:checked + .switch-on {
+    background-color: #a1b91d;
+    color: #fff;
+  }
+  .game-toggle input[type="radio"]:checked + .switch-off {
+    background-color: #e67168;
+    color: #fff;
+  }
+
+  .win{
+    background-color: yellow;
+  }
+  
